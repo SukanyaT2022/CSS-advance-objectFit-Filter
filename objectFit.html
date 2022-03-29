@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1 {
+        height: 600px;
+        width: 800px;
+        border: 2px solid aqua;
+        margin: 40px auto;
+
+    }
+
+    .box1 img {
+        height: 600px;
+        width: 800px;
+        object-fit: scale-down;
+        /* content make pics fit full pic wituout stretch
+        use cover make image fit just some part of pic
+        use scole down for move pic to center and white space on the side*/
+        filter:sepia(100%);
+    }
+
+    .box2{
+        height: 500px;
+        width: 300px;
+        border: 10px dotted pink;
+        margin: 40px auto;
+        
+
+    }
+
+    .box2 img{
+        height: 500px;
+        width: 300px;
+        object-fit: cover;
+
+    
+    }
+
+    .box2 img:hover{
+
+        /*filter: grayscale(80%);*/
+        /*filter: blur(10px);*/
+        /*filter:brightness(50%);*/
+        /*filter: saturate(150%);*/
+       /* filter:invert(90%);*/
+          filter:sepia(100%);
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <img
+            src="https://images.unsplash.com/photo-1565025968207-cf3123cd1e8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhbG0lMjB0cmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+
+    </div>
+    <div class="box2">
+
+        <img
+            src=" https://media.istockphoto.com/photos/famingo-picture-id496154302?b=1&k=20&m=496154302&s=170667a&w=0&h=cg6WJXQeejtNUVVWTeKSDGjfUO9IXcJNt1qP8rXXvYg=">
+
+    </div>
+
+</body>
+
+</html>
